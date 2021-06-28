@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-elevation-z5 {
+    position: relative;
+    z-index: 2;
+}
+
+.mat-toolbar.mat-primary {
+    background: #77439A;
+    color: #fff;
+}
+
+.mat-card {
+    background: #4DC6E2;
+    color: #fff;
+}
+

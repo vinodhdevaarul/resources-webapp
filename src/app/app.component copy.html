@@ -1,0 +1,38 @@
+<mat-toolbar class='mat-elevation-z5' color="primary">
+  <mat-toolbar-row>
+    <span>Aspire IAS Resource Tracker</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button>
+       <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">home</mat-icon>
+    </button>   
+    <button mat-icon-button>
+      <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">settings</mat-icon>
+    </button>  
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened>
+    <mat-nav-list>
+      <a mat-list-item style="height: 60px"><mat-icon>home</mat-icon>Home</a>
+      <a mat-list-item routerLink='project' style="height: 60px"><mat-icon>horizontal_split</mat-icon>Projects</a>
+      <a mat-list-item routerLink='resource' style="height: 60px"><mat-icon>perm_identity</mat-icon>Resources</a>
+      <a mat-list-item routerLink='mapping' style="height: 60px"><mat-icon>map</mat-icon>Mappings</a>
+      <a mat-list-item routerLink='report' style="height: 60px"><mat-icon>dashboard</mat-icon>Reports</a>
+      <a mat-list-item style="height: 60px"><mat-icon>settings</mat-icon>Settings</a>
+    </mat-nav-list> 
+  </mat-sidenav>  
+  <mat-sidenav-content>
+    <p style="height:85vh">
+      <router-outlet></router-outlet>
+    </p>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<mat-toolbar class='mat-elevation-z5' style="height:30px">
+  <mat-toolbar-row style="font-style: italic;font-size: 15px;">
+    <span>Aspire IAS Resource Tracker</span>
+    <mat-icon>copyright</mat-icon>Aspire Systems India Private Limited
+    <mat-icon>contact_support</mat-icon>aspire@aspire.com
+   </mat-toolbar-row>
+</mat-toolbar>
